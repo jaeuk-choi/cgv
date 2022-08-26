@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* 초기화 */
+html, body, div, header, nav, section, aside, article, footer, figure,
+figcaption, legend, ul, ol, li, dl, dt, dd, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+fieldset {
+    border: 0;
+}
+
+/* 탑 배너 영역 시작 */
+#top_banner {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+}
+.top_banner_wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+/* 헤더 영역 시작 */
+#div_contents a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+#header_contents {
+    height: 113px;
+    margin: 0 0 50px;
+}
+#div_contents {
+    width: 991px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 6px 25px 5px;
+}
+.logo {
+    width: 275px;
+    height: 53px;
+    display: inline-block;
+    text-align: left;
+}
+.logo span {
+    width: 158px;
+    height: 24px;
+    font-size: 16px;
+}
+.logo img {
+    width: 150px;
+}
+.info_wrap {
+    display: inline-block;
+    width: 700px;
+    height: 57px;
+    font-size: 13px;
+    text-align: right;
+}
+.info_wrap img {
+    width: 36px;
+    height: 36px;
+}
+.info_wrap span {
+    width: 68px;
+    height: 20px;
+}
+.info_wrap li {
+    width: 52px;
+    height: 70px;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+/* 헤더 영역 종료 */
+
+.mainMenu a {
+    text-decoration: none;
+    color: #000;
+}
+.mainMenu {
+    border-top: 1px solid #ccc;
+    border-bottom: 1.5px solid rgb(245, 94, 94);
+    padding: 0 300px;
+}
+.mainMenu .title {
+    font-size: 18px;
+    padding: 20px;
+}
+.mainMenu > li {
+    position: relative;
+}
+.mainMenu li, .mainMenu a {
+    display: inline-block;
+}
+.mainMenu > li > a:hover, .mainMenu > li > a:focus {
+    color: red;
+}
+.mainMenu > li > a:hover::after, .mainMenu > li > a:focus::after {
+    display: block;
+    height: 2px;
+    background: #000;
+    width: 100%;
+    position: relative;
+    top: 12px;
+}
+.mainMenu ul {
+    position: absolute;
+    z-index: 10;
+    white-space: nowrap;
+}
+.mainMenu ul a {
+    padding: 8px 0 7px 15px;
+}
+.mainMenu ul a::before {
+    color: #666;
+    position: relative;
+    top: 2px;
+}
+.mainMenu ul a:hover::before, .mainMenu ul a:focus::before {
+    color: #f00;
+}
+.mainMenu > li:hover ul {
+    display: block;
+}
+.MOVIE {
+    display: none;
+}
+.theater {
+    display: none;
+}
+.reservation {
+    display: none;
+}
+.store {
+    display: none;
+    left: -100px;
+}
+.event {
+    display: none;
+    left: -150px;
+}
+.benefit {
+    display: none;
+    right: 0;
+}
+
+/* memberArea 영역 시작 */
+
+#memberArea {
+    width: 700px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+#memberArea h2 {
+    left: 20px;
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.require {
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    white-space: nowrap;
+    text-indent: 10px;
+    overflow: hidden;
+}
+#joinForm fieldset {
+    border-top: 2px solid #ccc;
+}
+#joinForm p {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+#joinForm label {
+    float: left;
+    width: 120px;
+    padding: 13px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+#joinForm input {
+    margin: 10px 0;
+}
+#joinForm input:not([type="radio"]) {
+    border: 1px solid #aaa;
+    height: 18px;
+    padding-left: 5px;
+}
+#joinForm input[type="radio"] {
+    margin: 0;
+}
+a.idCheck, a.findZipcode {
+    font-size: 0.9em;
+    background-color: #ec9d26;
+    color: #fff;
+    padding: 3px 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+a.findZipcode {
+    position: absolute;
+    left: 260px;
+    top: 10px;
+}
+input#address {
+    display: block;
+    margin: 0;
+}
+.labelAddress {
+    height: 50px;
+    line-height: 50px;
+}
+
+.btnJoinArea {
+    text-align: center;
+    margin: 15px 0;
+}
+.btnJoinArea button {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0;
+    margin: 0 5px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+.btnOk, .btnCancel {
+    background-color: #666;
+}
+
+.btnOk::before {
+    font-size: 2em;
+    position: relative;
+    line-height: 0;
+    top: 7px;
+    left: -5px;
+}
+/* memberArea 영역 종료 */

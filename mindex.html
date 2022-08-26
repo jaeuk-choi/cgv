@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav a:link, a:visited {
+            color: #fff;
+        }
+        nav a:active {
+            color: yellow;
+        }
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 2.5;
+        }
+        li {
+            font-size: 1em;
+            line-height: 2.5;
+        }
+        #container {
+            width: 100%;
+        }
+        header {
+            width: 100%;
+            height: 400px;
+            background: url(imgs/CGVgangnam.jpg)no-repeat center;
+            background-size: cover;
+        }
+        nav {
+            height: 50px;
+            background-color: #000;
+        }
+        #main-nav {
+            list-style: none;
+            padding: 10px;
+        }
+        #main-nav li {
+            display: inline-block;
+            color: #fff;
+            font-size: 0.8em;
+            margin: 5px 15px;
+        }
+        .photo {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        .photo img {
+            width: 100%;
+        }
+        .ice {
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        ol {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        footer {
+            background-color: #000;
+        }
+        footer p {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="#intro">CGV소개</a></li>
+                    <li><a href="#choice">이달의 추천</a></li>
+                    <li><a href="#map">위치/주차 안내</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="intro">
+            <div class="page-title">
+                <h1>CGV 소개</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="imgs/소개.jpg" alt="소개">
+                </div>
+                <div class="text">
+                    <p>CGV는 선진화된 관람문화와 최고의 서비스로 고객에게 잊을 수 없는 감동을 선사합니다.</p>
+                    <p>CGV홈페이지를 통해 영화 예매뿐만 아니라 그 이상의 서비스와 감동을 전달하고, 다양한 즐거움과 특별한 경험을 제공하고자 합니다.</p>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <div class="page-title">
+                <h1>위치/주차 안내</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="imgs/위치안내.PNG" alt="서울특별시 강남구 역삼동 814-6 스타플렉스">
+                </div>
+                <div class="text">
+                    <p>서울특별시 강남구 역삼동 814-6 스타플렉스</p>
+                    <p>서울특별시 강남구 강남대로 438 (역삼동)</p>
+                </div>
+            </div>
+        </section>
+        <section id="choice">
+            <div class="page-title">
+                <h1>이달의 추천 영화</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img class="ice" src="imgs/육사오.jpg" alt="육사오">
+                </div>
+                <div class="text">
+                    <h2>육사오</h2>
+                    <ol>
+                        <li>줄거리 : 바람을 타고 군사분계선을 넘어가버린 57억 1등 당첨 로또를 둘러싼 남북 군인들간의 코믹 접선극</li>
+                        <li>감독 : 박규태 / 배우 : 고경표 ,  이이경 ,  음문석 ,  박세완 ,  곽동연 ,  이순원 ,  김민호</li>
+                        <li>장르 : 코미디 / 기본 : 12세 이상, 113분, 한국</li>
+                        <li>개봉 : 2022.08.24</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>My times with CGV</p>
+        </footer>
+    </div>
+</body>
+</html>
